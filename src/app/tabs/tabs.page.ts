@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {NavController} from '@ionic/angular';
 
 @Component({
-  selector: 'app-tabs',
-  templateUrl: 'tabs.page.html',
-  styleUrls: ['tabs.page.scss']
+    selector: 'app-tabs',
+    templateUrl: 'tabs.page.html',
+    styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
 
-  constructor() {}
+    constructor(private navCtrl: NavController) {
+    }
 
+    addCard() {
+        this.navCtrl.navigateForward('my-cards');
+    }
 }

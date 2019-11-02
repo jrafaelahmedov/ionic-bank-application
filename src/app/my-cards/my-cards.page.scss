@@ -1,0 +1,115 @@
+.card {
+  -webkit-box-shadow: 0px 17px 43px -20px rgba(60, 72, 230, 1);
+  -moz-box-shadow: 0px 17px 43px -20px rgba(60, 72, 230, 1);
+  box-shadow: 0px 17px 43px -20px rgba(60, 72, 230, 1);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.card-pan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.card-holder {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2vh;
+}
+
+.credit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 8vw;
+  width: 100%;
+  height: 100px;
+}
+
+.credit-footer {
+  padding: 2vh 8vw;
+}
+
+.visa {
+  height: 2vh;
+}
+
+.mastercard {
+  height: 4vh;
+}
+
+.cardChip {
+  width: 4vh;
+  height: 4vh;
+
+}
+
+#card1 {
+  background: linear-gradient(45deg, #00d2ff 0%, #3a47d5 100%);
+  border-radius: 6vh;
+}
+
+#card2 {
+  background: linear-gradient(45deg, #efd5ff 0%, #515ada 100%);
+  border-radius: 6vh;
+}
+
+#card3 {
+  background: linear-gradient(45deg, #FC466B 0%, #3F5EFB 100%);
+  border-radius: 6vh;
+}
+
+ion-item {
+  --inner-padding-end: 0 !important;
+  --padding-end: 0 !important;
+  --border-width: 0 !important;
+  --border-color: transparent;
+}
+
+.addButton {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 2vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(58, 71, 213, 0.17);
+  font-weight: bold;
+  height: 50px;
+  padding-left: 10px;
+  color: #3a47d5;
+
+  ion-icon {
+    background-color: #3a47d5;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 12px !important;
+  }
+}
+
+.card:last-child {
+  margin-bottom: 44px;
+}
+
+.addCardBackButton {
+  color: #3a47d5;
+  border-radius: 50%;
+}
+
+.ion-button-title-size {
+  text-align: left;
+  font-size: medium;
+}
+

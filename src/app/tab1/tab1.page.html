@@ -1,41 +1,216 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Dashboard
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon size="large" src="/assets/icon/man.svg"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+    <ion-slides [options]="slideOpts">
+
+        <ion-slide>
+            <div class="card" id="card1">
+                <div class="credit-header">
+                    <img src="/assets/icon/visa.svg" class="visa">
+                    <!--            <img src="/assets/icon/master_logo.svg">-->
+                    <img src="/assets/icon/chip.svg" class="cardChip">
+                </div>
+
+                <div class="credit-footer">
+                    <div class="card-pan">
+                        <div>• • • •</div>
+                        <div>• • • •</div>
+                        <div>• • • •</div>
+                        <div>2457</div>
+                    </div>
+                    <div class="card-holder">
+                        Robert Downey Jr.
+                    </div>
+                </div>
+            </div>
+            <div class="transaction">
+                <ion-list-header no-padding>
+                    <ion-item lines="none" class="headerList">
+                        <ion-label>Transaction</ion-label>
+                        <ion-select class="ionSelect" placeholder="Select One">
+                            <ion-select-option value="today" selected>Today</ion-select-option>
+                            <ion-select-option value="weekly">Weekly</ion-select-option>
+                            <ion-select-option value="monthly" selected>Monthly</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-list-header>
+                <ion-list class="operList">
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/boy-5.png' item-left/>
+                        <ion-label>Pokémon Yellow</ion-label>
+                        <ion-label text-right> +255</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/boy-7.png' item-left/>
+                        <ion-label>Mega Man X</ion-label>
+                        <ion-label text-right> -355</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl.png' item-left/>
+                        <ion-label>The Legend of Zelda</ion-label>
+                        <ion-label text-right> +155</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-3.png' item-left/>
+                        <ion-label>Pac-Man</ion-label>
+                        <ion-label text-right> -25</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-23.png' item-left/>
+                        <ion-label>Super Mario World</ion-label>
+                        <ion-label text-right> +5</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-24.png' item-left/>
+                        <ion-label>Pokémon Yellow</ion-label>
+                        <ion-label text-right> -155</ion-label>
+                    </ion-item>
+                </ion-list>
+            </div>
+
+        </ion-slide>
+
+        <ion-slide>
+            <div class="card" id="card2">
+
+                <div class="credit-header">
+                    <img src="/assets/icon/visa.svg" class="visa">
+                    <img src="/assets/icon/chip.svg" class="cardChip">
+                </div>
+
+                <div class="credit-footer">
+                    <div class="card-pan">
+                        <div>• • • •</div>
+                        <div>• • • •</div>
+                        <div>• • • •</div>
+                        <div>3568</div>
+                    </div>
+                    <div class="card-holder">
+                        Robert Downey Jr.
+                    </div>
+                </div>
+            </div>
+
+            <div class="transaction">
+                    <ion-item lines="none" class="headerList">
+                        <ion-label>Transaction</ion-label>
+                        <ion-select class="ionSelect" placeholder="Select One">
+                            <ion-select-option value="today" selected>Today</ion-select-option>
+                            <ion-select-option value="weekly">Weekly</ion-select-option>
+                            <ion-select-option value="monthly" selected>Monthly</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                <ion-list class="operList">
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/boy-5.png' item-left/>
+                        <ion-label>Pokémon Yellow</ion-label>
+                        <ion-label text-right> +255</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/boy-7.png' item-left/>
+                        <ion-label>Mega Man X</ion-label>
+                        <ion-label text-right> -355</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl.png' item-left/>
+                        <ion-label>The Legend of Zelda</ion-label>
+                        <ion-label text-right> +155</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-3.png' item-left/>
+                        <ion-label>Pac-Man</ion-label>
+                        <ion-label text-right> -25</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-23.png' item-left/>
+                        <ion-label>Super Mario World</ion-label>
+                        <ion-label text-right> +5</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-24.png' item-left/>
+                        <ion-label>Pokémon Yellow</ion-label>
+                        <ion-label text-right> -155</ion-label>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="card" id="card3">
+
+                <div class="credit-header">
+                    <img src="/assets/icon/mastercard.svg" class="mastercard">
+                    <!--            <img src="/assets/icon/master_logo.svg">-->
+                    <img src="/assets/icon/chip.svg" class="cardChip">
+                </div>
+
+                <div class="credit-footer">
+                    <div class="card-pan">
+                        <div>• • • •</div>
+                        <div>• • • •</div>
+                        <div>• • • •</div>
+                        <div>6879</div>
+                    </div>
+                    <div class="card-holder">
+                        Robert Downey Jr.
+                    </div>
+                </div>
+            </div>
+            <div class="transaction">
+                <ion-list-header no-padding>
+                    <ion-item lines="none" class="headerList">
+                        <ion-label>Transaction</ion-label>
+                        <ion-select class="ionSelect" placeholder="Select One">
+                            <ion-select-option value="today" selected>Today</ion-select-option>
+                            <ion-select-option value="weekly">Weekly</ion-select-option>
+                            <ion-select-option value="monthly" selected>Monthly</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-list-header>
+                <ion-list class="operList">
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/boy-5.png' item-left/>
+                        <ion-label>Pokémon Yellow</ion-label>
+                        <ion-label text-right> +255</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/boy-7.png' item-left/>
+                        <ion-label>Mega Man X</ion-label>
+                        <ion-label text-right> -355</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl.png' item-left/>
+                        <ion-label>The Legend of Zelda</ion-label>
+                        <ion-label text-right> +155</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-3.png' item-left/>
+                        <ion-label>Pac-Man</ion-label>
+                        <ion-label text-right> -25</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-23.png' item-left/>
+                        <ion-label>Super Mario World</ion-label>
+                        <ion-label text-right> +5</ion-label>
+                    </ion-item>
+                    <ion-item class="listMarginLeft" no-padding>
+                        <img src='/assets/icon/girl-24.png' item-left/>
+                        <ion-label>Pokémon Yellow</ion-label>
+                        <ion-label text-right> -155</ion-label>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </ion-slide>
+    </ion-slides>
 </ion-content>

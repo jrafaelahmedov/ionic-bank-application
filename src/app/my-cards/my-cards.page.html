@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="addCardBackButton">
+      <ion-back-button>
+
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-button-title-size">My Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-item class="listMarginLeft" no-padding text-center>
+        <div class="card" id="card1">
+          <div class="credit-header">
+            <img src="/assets/icon/visa.svg" class="visa">
+            <!--            <img src="/assets/icon/master_logo.svg">-->
+            <img src="/assets/icon/chip.svg" class="cardChip">
+          </div>
+
+          <div class="credit-footer">
+            <div class="card-pan">
+              <div>• • • •</div>
+              <div>• • • •</div>
+              <div>• • • •</div>
+              <div>2457</div>
+            </div>
+            <div class="card-holder">
+              Robert Downey Jr.
+            </div>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item class="listMarginLeft" no-padding>
+        <div class="card" id="card2">
+          <div class="credit-header">
+            <img src="/assets/icon/visa.svg" class="visa">
+            <!--            <img src="/assets/icon/master_logo.svg">-->
+            <img src="/assets/icon/chip.svg" class="cardChip">
+          </div>
+
+          <div class="credit-footer">
+            <div class="card-pan">
+              <div>• • • •</div>
+              <div>• • • •</div>
+              <div>• • • •</div>
+              <div>2457</div>
+            </div>
+            <div class="card-holder">
+              Robert Downey Jr.
+            </div>
+          </div>
+        </div>
+      </ion-item>
+      <ion-item class="listMarginLeft" no-padding>
+        <div class="card" id="card3">
+          <div class="credit-header">
+            <img src="/assets/icon/visa.svg" class="visa">
+            <!--            <img src="/assets/icon/master_logo.svg">-->
+            <img src="/assets/icon/chip.svg" class="cardChip">
+          </div>
+
+          <div class="credit-footer">
+            <div class="card-pan">
+              <div>• • • •</div>
+              <div>• • • •</div>
+              <div>• • • •</div>
+              <div>2457</div>
+            </div>
+            <div class="card-holder">
+              Robert Downey Jr.
+            </div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+
+  <div class="addButton" (click)="addCard()">
+    <ion-icon name="add"></ion-icon>
+    Add Card
+  </div>
+</ion-content>
